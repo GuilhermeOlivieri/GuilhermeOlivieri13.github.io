@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="home.html" class="logo"><i class="fas fa-house"></i>MinhaCasa</a>
+
+         <ul>
+            <li><a href="#">Adicionar propriedade<i class="fas fa-paper-plane"></i></a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="#">Compre<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">Casas</a></li>
+                     <li><a href="#">Apartamentos</a></li>
+                     <li><a href="#">Comércios</a></li>
+                     <li><a href="#">Pronto para mudar</a></li>
+                     <li><a href="#">Mobiliado</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Venda<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">Venda sua casa</a></li>
+                     <li><a href="#">Suas vendas</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Alugue</a>
+                  <ul>
+                     <li><a href="#">Casa</a></li>
+                     <li><a href="#">Apartamento</a></li>
+                     <li><a href="#">Comércio</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Ajuda<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="about.html">Sobre nós</a></i></li>
+                     <li><a href="contact.html">Contato</a></i></li>
+                     <li><a href="contact.html#faq">FAQ</a></i></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="#">salvo <i class="far fa-heart"></i></a></li>
+            <li><a href="#">Conta <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">login</a></li>
+                  <li><a href="register.html">registro</a></li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+
+</header>
+
+
+<div class="home">
+
+   <section class="center">
+
+      <form action="search.html" method="post">
+         <h3>Ache sua casa perfeita</h3>
+         <div class="box">
+            <p>Digite sua localização <span>*</span></p>
+            <input type="text" name="location" required maxlength="50" placeholder="Coloque o nome da cidade" class="input">
+         </div>
+         <div class="flex">
+            <div class="box">
+               <p>Tipo de propriedade <span>*</span></p>
+               <select name="type" class="input" required>
+                  <option value="flat">Apartamento</option>
+                  <option value="house">Casa</option>
+                  <option value="shop">Comércio</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Quantos m² <span>*</span></p>
+               <select name="m²" class="input" required>
+                  <option value="1">1 m²</option>
+                  <option value="2">2 m²</option>
+                  <option value="3">3 m²</option>
+                  <option value="4">4 m²</option>
+                  <option value="5">5 m²</option>
+                  <option value="6">6 m²</option>
+                  <option value="7">7 m²</option>
+                  <option value="8">8 m²</option>
+                  <option value="9">9 m²</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Valor mínimo <span>*</span></p>
+               <select name="minimum" class="input" required>
+                  <option value="5000000">5 R$</option>
+                  <option value="1000000">10 R$</option>
+                  <option value="2000000">20 R$</option>
+                  <option value="3000000">30 R$</option>
+                  <option value="4000000">40 R$</option>
+                  <option value="4000000">40 R$</option>
+                  <option value="5000000">50 R$</option>
+                  <option value="6000000">60 R$</option>
+                  <option value="7000000">70 R$</option>
+                  <option value="8000000">80 R$</option>
+                  <option value="9000000">90 R$</option>
+                  <option value="10000000">1 Mil R$</option>
+                  <option value="20000000">2 Mil R$</option>
+                  <option value="30000000">3 Mil R$</option>
+                  <option value="40000000">4 Mil R$</option>
+                  <option value="50000000">5 Mil R$</option>
+                  <option value="60000000">6 Mil R$</option>
+                  <option value="70000000">7 Mil R$</option>
+                  <option value="80000000">8 Mil R$</option>
+                  <option value="90000000">9 Mil R$</option>
+                  <option value="100000000">10 Mil R$</option>
+                  <option value="150000000">15 Mil R$</option>
+                  <option value="200000000">20 Mil R$</option>
+               </select>
+            </div>
+            <div class="box">
+               <p>Valor máximo <span>*</span></p>
+               <select name="maximum" class="input" required>
+                  <option value="5000000">5 R$</option>
+                  <option value="1000000">10 R$</option>
+                  <option value="2000000">20 R$</option>
+                  <option value="3000000">30 R$</option>
+                  <option value="4000000">40 R$</option>
+                  <option value="4000000">40 R$</option>
+                  <option value="5000000">50 R$</option>
+                  <option value="6000000">60 R$</option>
+                  <option value="7000000">70 R$</option>
+                  <option value="8000000">80 R$</option>
+                  <option value="9000000">90 R$</option>
+                  <option value="10000000">1 Mil R$</option>
+                  <option value="20000000">2 Mil R$</option>
+                  <option value="30000000">3 Mil R$</option>
+                  <option value="40000000">4 Mil R$</option>
+                  <option value="50000000">5 Mil R$</option>
+                  <option value="60000000">6 Mil R$</option>
+                  <option value="70000000">7 Mil R$</option>
+                  <option value="80000000">8 Mil R$</option>
+                  <option value="90000000">9 Mil R$</option>
+                  <option value="100000000">10 Mil R$</option>
+                  <option value="150000000">15 Mil R$</option>
+                  <option value="200000000">20 Mil R$</option>
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="search property" name="search" class="btn">
+      </form>
+
+   </section>
+
+</div>
+
+
+
+<section class="services">
+
+   <h1 class="heading">Nossos serviços</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>Compre casas</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>Alugue casas</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Venda casas</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Apartamentos</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>Comércio e shoppings</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>24/7 serviço</h3>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+      </div>
+
+   </div>
+
+</section>
+
+
+<section class="listings">
+
+   <h1 class="heading">últimas publicações</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>Tiago</p>
+               <span>17-09-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>Casa</span><span>á venda</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-1.webp" alt="">
+         </div>
+         <h3 class="name">Apartamentos e casas modernas</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Penha, São Paulo, Brasil - 588303</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>799M²</span></p>
+         </div>
+         <a href="view_property.html" class="btn">ver propriedade</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>Jonas</p>
+               <span>58-11-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>Casa</span><span>á venda</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-2.webp" alt="">
+         </div>
+         <h3 class="name">Casas e apartamentos modernos</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Tatuapé, São Paulo, Brasil - 751403</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>874M²</span></p>
+         </div>
+         <a href="view_property.html" class="btn">Ver propriedade</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>j</h3>
+            <div>
+               <p>Vitor</p>
+               <span>29-01-2024</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>Casa</span><span>á venda</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-3.jpg" alt="">
+         </div>
+         <h3 class="name">Casas e apartamentos modernos</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>Mooca, São Paulo, Brasil - 407003</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>750M²</span></p>
+         </div>
+         <a href="view_property.html" class="btn">Ver propriedade</a>
+      </div>
+
+   </div>
+
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="listings.html" class="inline-btn">Ver todos</a>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="flex">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>12457966</span></a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i><span>1116788333</span></a>
+         <a href="mailto:shaikhanas@gmail.com"><i class="fas fa-envelope"></i><span>Guilherme@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>São Paulo, Brasil - 400104</span></a>
+      </div>
+
+      <div class="box">
+         <a href="home.html"><span>Início</span></a>
+         <a href="about.html"><span>Sobre</span></a>
+         <a href="contact.html"><span>Contato</span></a>
+         <a href="listings.html"><span>Todas as listas</span></a>
+         <a href="#"><span>Propriedades salvas</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2022 por <span>Guilherme</span> | Todos os direitos reservados!</div>
+
+</footer>
+
+
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
